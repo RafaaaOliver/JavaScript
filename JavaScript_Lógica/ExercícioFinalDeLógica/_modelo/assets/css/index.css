@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --primary-color: rgb(18, 182, 211);
+    --primary-color-dark: rgb(10, 62, 71);
+}
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form input, form label, form button{
+    display:block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form button{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover{
+    background: var(--primary-color-dark);
+}
+
+.botoes,h1{
+    text-align: center;
+    font-size: 2em;
+}
+.relogio{
+    text-align: center;
+    font-size: 3em;
+}
+
+.iniciar,.pausar,.resetar{
+    background-color: rgb(17, 139, 192);
+    font-size: 30px;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid rgb(17, 139, 192)
+}
+.pausado {
+    color: red;
+    background-color: cyan;
+}
